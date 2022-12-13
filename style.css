@@ -1,0 +1,287 @@
+.brainmetrix{
+color:white;
+font-family:verdana;
+font-size:80px;
+background:#000080;
+background-position:left-side;
+}
+.table1{
+	background:#FF69B4;
+	font-family:verdana;
+	font size:80px;
+	color:white;
+	width:900px;
+	height:100px;
+	margin:-180px 500px 500px 400px;
+	
+}
+.table2{
+	background:#A9A9A9;
+	font-family:verdana;
+	font size:60px;
+	color:white;
+}
+.cell{
+	background-color:black;
+}
+.braintraining{
+	margin:-500px 0px 0px 0px;
+	font-family:verdana;
+	font-size:20px;
+}
+.intro{
+	margin:-470px 300px 0 200px;
+	width:1200px;
+	font-family:verdana;
+	font size:15px;
+	background-color:white;
+}
+.body{
+	margin:-80px 0px 0px 0px;
+	background-color:#DCDCDC;
+}
+.matrix{
+	margin:0px 0px 0px 300px;
+}
+#memory_board{
+	background:grey;
+	border:#999 1px solid;
+	width:800px;
+	height:540px;
+	padding:24px;
+	margin:0px auto;
+}
+.memory_tile{
+	background: url(tile_bg.png) no-repeat;
+	background-Color:#FFF;
+	border:#000 1px solid;
+	width:71px;
+	height:71px;
+	float:left;
+	cursor:pointer;
+	margin:10px;
+	padding:20px;
+	font-size:64px;
+	text-align:center;
+}
+div#reflex_board{
+	background:#CCC;
+	border:#999 1px solid;
+	width:800px;
+	height:540px;
+	padding:24px;
+	margin:0px auto;
+}
+div#reflex_board > div{
+	background-Color:#FFF;
+	border:#000 1px solid;
+	width:71px;
+	height:71px;
+	float:left;
+	cursor:pointer;
+	margin:10px;
+	padding:20px;
+	font-size:64px;
+	text-align:center;
+}
+div#reflection_board{
+	background:#CCC;
+	border:#999 1px solid;
+	width:200px;
+	height:200px;
+	padding:24px;
+	margin:0px auto;
+}
+div#reflection_board > div{
+	background-Color:#FFF;
+	border:#000 1px solid;
+	width:150px;
+	height:150px;
+	float:left;
+	cursor:pointer;
+	margin:10px;
+	padding:20px;
+	font-size:64px;
+	text-align:center;
+}
+div#queen_board{
+	background:#CCC;
+	border:#999 1px solid;
+	width:752px;
+	height:700px;
+	padding:24px;
+	margin:0px auto;
+}
+div#queen_board > div{
+	background-Color:white;
+	border:#000 1px solid;
+	width:30px;
+	height:30px;
+	float:left;
+	cursor:pointer;
+	margin:10px;
+	padding:20px;
+	font-size:64px;
+	text-align:center;
+}
+#container {
+	display:inline-block;
+  width: 1200px;
+  height: 320px;
+  position: relative;
+  background: grey;
+  position:relative;
+}
+.box1{
+width:50px;
+height:500px;
+background:white;
+font-weight:bold;
+}
+#box2{
+width:50px;
+height:50px;
+background:white;
+color:black;
+}
+#box3{
+width:50px;
+height:50px;
+background:white;
+color:black;
+}
+#towerofhanoi_board1{
+	display:inline-block;
+	background:grey;
+	border:grey 1px solid;
+	width:280px;
+	height:200px;
+	padding:50px;
+}
+#towerofhanoi_board2{
+	display:inline-block;
+	transform:translate(0px,-154px);
+	background:grey;
+	border:grey 1px solid;
+	width:280px;
+	height:200px;
+	padding:50px;
+}
+#towerofhanoi_board3{
+	display:inline-block;
+	background:grey;
+	border:grey 1px solid;
+	width:280px;
+	height:200px;
+	padding:50px;
+	margin:0px auto;
+}
+#stick1{
+	width:10px;
+	height:250px;
+	margin-left:140px;
+	cursor:pointer;
+}
+#stick2{
+	width:10px;
+	height:250px;
+	margin-left:140px;
+	margin-top:-154px;
+	transform:translate(0px,154px);
+	cursor:pointer;
+}
+#stick3{
+	width:10px;
+	height:250px;
+    margin-left:140px;
+	cursor:pointer;
+}
+#pile{
+	transform:translate(-150px,50px) rotate(180deg);
+	position:relative;
+}
+
+#disk1{
+	width:10px;
+	height:50px;
+	border:thick solid transparent;
+	background:radial-gradient(#DAA520,#3D2200);
+	transform:translate(-25px,257px) rotate(90deg);
+	position:relative;
+	cursor:grab;
+	border-radius:20px;
+}
+#disk2{
+	width:10px;
+	height:100px;
+	border:thick solid transparent;
+	background:radial-gradient(#DAA520,#3D2200);
+	transform:translate(-25px,155px) rotate(90deg);
+	position:relative;
+	cursor:grab;
+	border-radius:20px;
+}
+#disk3{
+	width:10px;
+	height:150px;
+	background:radial-gradient(#DAA520,#3D2200);
+	border:thick solid transparent;
+	transform:translate(-29px,4px) rotate(90deg);
+	position:relative;
+	cursor:grab;
+	border-radius:20px;
+}
+#disk4{
+	width:10px;
+	height:200px;
+	background:radial-gradient(#DAA520,#3D2200);
+	border:thick solid transparent;
+	transform:translate(-28px,-197px) rotate(90deg) ;
+	position:relative;
+	cursor:grab;
+	border-radius:20px;
+}
+#disk5{
+	width:10px;
+	background:radial-gradient(#DAA520,#3D2200);
+	height:250px;
+	border:thick solid transparent;
+	position:relative;
+	transform:translate(-25px,-449px) rotate(90deg);
+	cursor:grab;
+	border-radius:20px;
+}
+#disk6{
+	width:10px;
+	height:300px;
+	background:radial-gradient(#DAA520,#3D2200);
+	position:relative;
+	border:thick solid transparent;
+	transform:translate(-25px,-751px) rotate(90deg);
+	cursor:grab;
+	border-radius:20px;
+}
+#disk7{
+	width:10px;
+	height:350px;
+	border:thick solid transparent;
+	background:radial-gradient(#DAA520,#3D2200);
+	position:relative;
+	transform:translate(-25px,-1102px) rotate(90deg);
+	cursor:grab;
+	border-radius:20px;
+}
+#disk8{
+	width:10px;
+	height:400px;
+	border:thick solid transparent;
+	background:radial-gradient(#DAA520,#3D2200);
+	position:relative;
+	transform:translate(-25px,-1500px) rotate(90deg);
+	cursor:grab;
+	border-radius:20px;
+}
+
+#button{
+background: url(r.png) no-repeat;
+}

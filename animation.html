@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+ <link rel=stylesheet type="text/css" href="style.css" />
+<p><button onclick="myMove()">Click Me</button></p> 
+  <div id ="disk1"></div>
+
+<script>
+function myMove() {
+  var elem = document.getElementById("disk1");  
+  var posx = 0;
+  var posy=0;
+  var flag=0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (posx == 1000) {
+	  flag=1;
+    } else {
+      posx++; 
+      elem.style.left = posx + "px"; 
+    }
+	if(flag==1){
+	if (posy == 350) {
+      clearInterval(id);
+    } else {
+      posy++; 
+      elem.style.top = posy + "px"; 
+    }
+	}
+	
+  }
+}
+</script>
+
+</body>
+</html>

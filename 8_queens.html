@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+<title>Brain Training|Brain Exercices|Brain Fitness Games|Brain Metrix</title>
+<meta charset ="utf-8"/>
+ <link rel=stylesheet type="text/css" href="style.css" />
+</head>
+<body class="body">
+<p class="brainmetrix"><img src="brain.png">Brain Metrix<br><br></p>
+<table class="table1" border="black">
+<tr>
+<td><a href="template.html">Brain Exercices</a></td><td><a href="memorygame.html">Memory Game</a></td><td><a href="reflextest.html">Reflex test</a></td><td><a href="chessgame.html">Free Chess Game</a></td><td><a href="iqtest.html">IQ Test</a></td><td><a href="concentrationgame.html">Concentration Game</a></td><td><a href="iqscale.html">IQ Scale</a></td>
+</tr>
+</table>
+<div class="braintraining">
+<h1>Brain Training</h1>
+<p>Brain Metrix is an educational website dedicated to brain training programs; you can achieve optimum fitness by visiting your gym,
+ and engaging in a brain fitness program that is both fun and stimulating. Here you stretch and train your brain to the limit, you can train and test your memory
+ or test your reflexes or even your brain creativity and improve it and much more. Just check the menu on the left for a full list of our brain training games and 
+ activities which are all loads of fun.<br>You will find some brain fitness workouts that can help your mind process information more quickly, 
+ and more efficiently, as well as the ability to perform multiple tasks at the same time. You can get help to concentrate more and increase your brain reflection speed;
+ you will find simple but very effective brain training games and exercises like solving math problems to achieve greater mind fitness. You may be the smartest person in 
+ the world and you don't even know it. If you're not the most intelligent person in the world yet, then, welcome to your gym!<br>
+Included you will find some famous brainteasers, and puzzles that are fun and good for brain stretching exercise. Below is a 
+list of all our brain exercises described in more detail:</p></div>
+<table border="black" class="table2">
+   <tr>
+    <td>Brain Training Games</td>
+    </tr>
+	<tr>
+	<td> <a href="8_queens.html">8 Queens</a></td>
+	</tr>
+	<tr>
+	<td><a href="arrangegame.html">Arrange Game</a></td>
+	</tr>
+	<tr>
+	<td><a href="brainfitness.html">Brain Fitness</a></td>
+	</tr>
+	<tr>
+	<td><a href="brainreflection.html">Brain Reflection</a></td>
+	</tr>
+	<tr>
+	<td><a href="chessgame.html">Chess Game</a></td>
+	</tr>
+	<tr>
+	<td><a href="chessknight.html">Chess Knight</td>
+	</tr>
+	<tr>
+	<td><a href="cognitivetraining.html">Cognitive Training</a></td>
+	</tr>
+	<tr>
+	<td><a href="concentrationgame.html">Concentration Game</a></td>
+	</tr>
+	<tr>
+	<td><a href="iqdefinition.html">IQ Definition</a></td>
+	</tr>
+	<tr>
+	<td><a href="iqscale.html">IQ scale</a></td>
+	</tr>
+	<tr>
+	<td><a href="iqtest.html">IQ Test</a></td>
+	</tr>
+	<tr>
+	<td><a href="intelligencedefinition.html">Intelligence Definition</a></td>
+	</tr>
+	<tr>
+	<td><a href="memorygame.html">Memory Game</a></td>
+	</tr>
+	<tr>
+	<td><a href="memorytest.html">Memory Test</a></td>
+	</tr>
+	<tr>
+	<td><a href="reflextest.html">Reflex Test</a></td>
+	</tr>
+	<tr>
+	<td><a href="spatialintelligence.html">Spatial Intelligence</a></td>
+	</tr>
+	<tr>
+	<td><a href="freesudoku.html">Free Sudoku</a></td>
+	</tr>
+	<tr>
+	<td><a href="towerofhanoi.html">Tower of Hanoi</a></td>
+	</tr>
+	<tr>
+	<td><a href="contactus.html">Contact us</a></td>
+	</tr>
+</table>
+<div class="intro">
+<h1>8 Queens</h1>
+<h2>Brain Reflection Test</h2>
+<p>8 Queens is one of the simple strategy games based on one of the chess rules, demonstrating the behavior of the queen in the board, to win you have to find spots to move the queen 8 times.</p>
+<p><b>The eight queens puzzle</b> is based on the classic stategy games problem which is in this case putting eight chess queens on an 8×8 chessboard such that none of them is able to capture any other using the standard chess queen's moves. The color of the queens is meaningless in this puzzle, and any queen is assumed to be able to attack any other. Thus, a solution requires that no two queens share the same row, column, or diagonal. The eight queens puzzle is an example of the more general n queens puzzle of placing n8 queens on an n×n chessboard like the board below:</p>
+<p>Finding all solutions to this strategy game (the 8 queens puzzle) is a good example of a simple but nontrivial problem. For this reason, it is often used as an example problem for various programming techniques, including nontraditional approaches such as constraint programming, logic programming or genetic algorithms. Most often, it is used as an example of a problem which can be solved with a recursive algorithm, by phrasing the n queens problem inductively in terms of adding a single queen to any solution to the n?1 queens problem. The induction bottoms out with the solution to the 0 queens problem, which is an empty chessboard.</p>
+<p>Related words: Functional programming, Strategy Mathematical game, Backtracking.</p>
+<div id="queen_board">
+</div>
+<input type="button" value="clear" onclick="new_board()">
+<script type="text/javascript">
+var queen_array=[["queen","none","none","none","none","none","none","none"],
+["none","none","none","none","queen","none","none","none"],
+["none","none","none","none","none","none","none","queen"],
+["none","none","none","none","none","queen","none","none"],
+["none","none","queen","none","none","none","none","none"],
+["none","none","none","none","none","none","queen","none"],
+["none","queen","none","none","none","none","none","none"],
+["none","none","none","queen","none","none","none","none"]];
+var ctri,ctrj;
+var tile_name;
+var tile_id;
+var is_clicked=[[0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0]];
+new_board();
+function new_board(){
+var output='';
+is_clicked=[[0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0]];
+var ctr=0;
+for(var i=0;i<8;i++){
+for(var j=0;j<8;j++){
+output+='<div id="tile'+i+''+j+'" onclick="display_queen(this,'+i+','+j+')"></div>';
+ctr++;
+}
+}
+document.getElementById("queen_board").innerHTML=output;
+}
+
+function display_queen(tile,l,c){
+
+if(is_clicked[l][c]==0){
+is_clicked[l][c]=1;
+tile_id=tile.id;
+document.getElementById(tile_id).style.background="url(chess_queen.png) no-repeat";
+document.getElementById(tile_id).style.backgroundColor="white";
+for(var i=0;i<8;i++){
+if(i!=c&&is_clicked[l][i]==0){
+tile_name="tile"+l+i;
+document.getElementById(tile_name).style.background="url(dot.png) no-repeat";
+document.getElementById(tile_name).style.backgroundColor="white";
+is_clicked[l][i]=1;
+}
+}
+for(var i=0;i<8;i++){
+if(i!=l&&is_clicked[i][c]==0){
+tile_name="tile"+i+c;
+document.getElementById(tile_name).style.background="url(dot.png) no-repeat";
+document.getElementById(tile_name).style.backgroundColor="white";
+is_clicked[i][c]=1;
+}
+}
+ctri=l;
+ctrj=c;
+while(ctrj!=0){
+ctri--;
+ctrj--;
+tile_name="tile"+ctri+ctrj;
+if(is_clicked[ctri][ctrj]==0){
+document.getElementById(tile_name).style.background="url(dot.png) no-repeat";
+document.getElementById(tile_name).style.backgroundColor="white";
+is_clicked[ctri][ctrj]=1;
+}
+}
+ctri=l;
+ctrj=c;
+while(ctrj!=7){
+ctri++;
+ctrj++;
+tile_name="tile"+ctri+ctrj;
+if(is_clicked[ctri][ctrj]==0){
+document.getElementById(tile_name).style.background="url(dot.png) no-repeat";
+document.getElementById(tile_name).style.backgroundColor="white";
+is_clicked[ctri][ctrj]=1;
+}
+}
+if(l!=c){
+for(var i=0;i<3;i++){
+alert("hello");
+}
+}
+}
+}
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<title>Brain Training|Brain Exercices|Brain Fitness Games|Brain Metrix</title>
+<meta charset ="utf-8"/>
+ <link rel=stylesheet type="text/css" href="style.css" />
+</head>
+<body class="body">
+<p class="brainmetrix"><img src="brain.png">Brain Metrix<br><br></p>
+<table class="table1" border="black">
+<tr>
+<td><a href="template.html">Brain Exercices</a></td><td><a href="memorygame.html">Memory Game</a></td><td><a href="reflextest.html">Reflex test</a></td><td><a href="chessgame.html">Free Chess Game</a></td><td><a href="iqtest.html">IQ Test</a></td><td><a href="concentrationgame.html">Concentration Game</a></td><td><a href="iqscale.html">IQ Scale</a></td>
+</tr>
+</table>
+<div class="braintraining">
+<h1>Brain Training</h1>
+<p>Brain Metrix is an educational website dedicated to brain training programs; you can achieve optimum fitness by visiting your gym,
+ and engaging in a brain fitness program that is both fun and stimulating. Here you stretch and train your brain to the limit, you can train and test your memory
+ or test your reflexes or even your brain creativity and improve it and much more. Just check the menu on the left for a full list of our brain training games and 
+ activities which are all loads of fun.<br>You will find some brain fitness workouts that can help your mind process information more quickly, 
+ and more efficiently, as well as the ability to perform multiple tasks at the same time. You can get help to concentrate more and increase your brain reflection speed;
+ you will find simple but very effective brain training games and exercises like solving math problems to achieve greater mind fitness. You may be the smartest person in 
+ the world and you don't even know it. If you're not the most intelligent person in the world yet, then, welcome to your gym!<br>
+Included you will find some famous brainteasers, and puzzles that are fun and good for brain stretching exercise. Below is a 
+list of all our brain exercises described in more detail:</p></div>
+<table border="black" class="table2">
+   <tr>
+    <td>Brain Training Games</td>
+    </tr>
+	<tr>
+	<td> <a href="8_queens.html">8 Queens</a></td>
+	</tr>
+	<tr>
+	<td><a href="arrangegame.html">Arrange Game</a></td>
+	</tr>
+	<tr>
+	<td><a href="brainfitness.html">Brain Fitness</a></td>
+	</tr>
+	<tr>
+	<td><a href="brainreflection.html">Brain Reflection</a></td>
+	</tr>
+	<tr>
+	<td><a href="chessgame.html">Chess Game</a></td>
+	</tr>
+	<tr>
+	<td><a href="chessknight.html">Chess Knight</td>
+	</tr>
+	<tr>
+	<td><a href="cognitivetraining.html">Cognitive Training</a></td>
+	</tr>
+	<tr>
+	<td><a href="concentrationgame.html">Concentration Game</a></td>
+	</tr>
+	<tr>
+	<td><a href="iqdefinition.html">IQ Definition</a></td>
+	</tr>
+	<tr>
+	<td><a href="iqscale.html">IQ scale</a></td>
+	</tr>
+	<tr>
+	<td><a href="iqtest.html">IQ Test</a></td>
+	</tr>
+	<tr>
+	<td><a href="intelligencedefinition.html">Intelligence Definition</a></td>
+	</tr>
+	<tr>
+	<td><a href="memorygame.html">Memory Game</a></td>
+	</tr>
+	<tr>
+	<td><a href="memorytest.html">Memory Test</a></td>
+	</tr>
+	<tr>
+	<td><a href="reflextest.html">Reflex Test</a></td>
+	</tr>
+	<tr>
+	<td><a href="spatialintelligence.html">Spatial Intelligence</a></td>
+	</tr>
+	<tr>
+	<td><a href="freesudoku.html">Free Sudoku</a></td>
+	</tr>
+	<tr>
+	<td><a href="towerofhanoi.html">Tower of Hanoi</a></td>
+	</tr>
+	<tr>
+	<td><a href="contactus.html">Contact us</a></td>
+	</tr>
+</table>
+<div class="intro" >
+<h1>Reflex Test</h1>
+<p>Test your <b>reflex</b> with this fun to do exercise, the faster the better, try to get a score of<b> 58 points</b> in this exercise. Once you reach that score then you're very fast, and we should congratulate you, keep it up! Humans often consider themselves to be the dominant species on Earth, and the most advanced in intelligence and ability to manage their environment, thanks to the mind reflection and adaptation to their environment. Test your reflex and have fun doing it!</p>
+<h2>Instructions for the reflex test</h2>
+<p>You have to wait for a message to ask you if you're ready, once you click ok then the game will start. You have to start clicking on the green buttons as fast as possible, if you take too long or miss the right green square the color will change to red exactly on the square you incorrectly hit. Keep clicking until the 60 seconds are over, if you get a score of 58, then you're super fast and you should be proud of yourself that you have such a quick reflex. Note that if you have a touch pad then this will not be a perfect game for you, because this game needs a mouse to be played faster, a touchpad on your laptop doesn't react as fast. Try to use a mouse for it. Good luck!</p>
+<p><b>Pro tip :</b> Try changing the speed once you are ready to take things to the next level!</p>
+<input type="button" value="start" id="st" onclick="wait()">
+<script>
+var reflex_array = ['','','','','','','','','','','','','','','','','','','','','','','',''];
+var score=0;
+var blinks=0;
+var random_tile;
+var blinking_tile_id;
+var wrong_tile;
+function nothing(){
+blink_green();
+}
+function wait(){
+document.getElementById("st").disabled=true;
+setTimeout("nothing()",2000);
+}
+function shuffle_number(){
+  var rnd;
+   var l=reflex_array.length;
+   rnd=Math.floor(Math.random()*l);
+   return rnd;
+}
+function generate_board(){
+var output;
+for(var i = 0; i < reflex_array.length; i++){
+		output += '<div id="tile_'+i+'" onclick="reflex_tile(this)"></div>';
+	}
+	document.getElementById('reflex_board').innerHTML = output;
+
+}
+function unblink_green(){
+document.getElementById(random_tile).style.backgroundColor="#FFF";
+setTimeout("blink_green()",700);
+blinking_tile_id="none";
+}
+function blink_green(){
+var num=shuffle_number();
+random_tile="tile_"+num;
+document.getElementById(random_tile).style.backgroundColor="#32CD32";
+blinking_tile_id=random_tile;
+if(blinks==30){
+halt();
+}
+else{
+blinks++;
+setTimeout("unblink_green()",700);
+}
+}
+function unblink_red(){
+document.getElementById(wrong_tile).style.backgroundColor="#FFF";
+}
+function blink_red(){
+document.getElementById(wrong_tile).style.backgroundColor="red";
+setTimeout("unblink_red()",200);
+}
+function halt(){
+alert("your score is "+score+"/"+blinks);
+document.location.reload(true);
+}
+function reflex_tile(tile){
+if(blinking_tile_id.localeCompare(tile.id)==0){
+score++;
+}
+else{
+wrong_tile=tile.id;
+blink_red();
+}
+}
+</script>
+<div id="reflex_board">
+<script>
+generate_board();
+</script>
+</div>
+</div>
+</div>
+</body>
+</html>

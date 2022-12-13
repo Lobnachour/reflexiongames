@@ -1,0 +1,384 @@
+<!doctype html>
+<html>
+<head>
+<title>Brain Training|Brain Exercices|Brain Fitness Games|Brain Metrix</title>
+<meta charset ="utf-8"/>
+ <link rel=stylesheet type="text/css" href="style.css" />
+</head>
+<body class="body">
+<p class="brainmetrix"><img src="brain.png">Brain Metrix<br><br></p>
+<table class="table1" border="black">
+<tr>
+<td><a href="template.html">Brain Exercices</a></td><td><a href="memorygame.html">Memory Game</a></td><td><a href="reflextest.html">Reflex test</a></td><td><a href="chessgame.html">Free Chess Game</a></td><td><a href="iqtest.html">IQ Test</a></td><td><a href="concentrationgame.html">Concentration Game</a></td><td><a href="iqscale.html">IQ Scale</a></td>
+</tr>
+</table>
+<div class="braintraining">
+<h1>Brain Training</h1>
+<p>Brain Metrix is an educational website dedicated to brain training programs; you can achieve optimum fitness by visiting your gym,
+ and engaging in a brain fitness program that is both fun and stimulating. Here you stretch and train your brain to the limit, you can train and test your memory
+ or test your reflexes or even your brain creativity and improve it and much more. Just check the menu on the left for a full list of our brain training games and 
+ activities which are all loads of fun.<br>You will find some brain fitness workouts that can help your mind process information more quickly, 
+ and more efficiently, as well as the ability to perform multiple tasks at the same time. You can get help to concentrate more and increase your brain reflection speed;
+ you will find simple but very effective brain training games and exercises like solving math problems to achieve greater mind fitness. You may be the smartest person in 
+ the world and you don't even know it. If you're not the most intelligent person in the world yet, then, welcome to your gym!<br>
+Included you will find some famous brainteasers, and puzzles that are fun and good for brain stretching exercise. Below is a 
+list of all our brain exercises described in more detail:</p></div>
+<table border="black" class="table2">
+   <tr>
+    <td>Brain Training Games</td>
+    </tr>
+	<tr>
+	<td> <a href="8_queens.html">8 Queens</a></td>
+	</tr>
+	<tr>
+	<td><a href="arrangegame.html">Arrange Game</a></td>
+	</tr>
+	<tr>
+	<td><a href="brainfitness.html">Brain Fitness</a></td>
+	</tr>
+	<tr>
+	<td><a href="brainreflection.html">Brain Reflection</a></td>
+	</tr>
+	<tr>
+	<td><a href="chessgame.html">Chess Game</a></td>
+	</tr>
+	<tr>
+	<td><a href="chessknight.html">Chess Knight</td>
+	</tr>
+	<tr>
+	<td><a href="cognitivetraining.html">Cognitive Training</a></td>
+	</tr>
+	<tr>
+	<td><a href="concentrationgame.html">Concentration Game</a></td>
+	</tr>
+	<tr>
+	<td><a href="iqdefinition.html">IQ Definition</a></td>
+	</tr>
+	<tr>
+	<td><a href="iqscale.html">IQ scale</a></td>
+	</tr>
+	<tr>
+	<td><a href="iqtest.html">IQ Test</a></td>
+	</tr>
+	<tr>
+	<td><a href="intelligencedefinition.html">Intelligence Definition</a></td>
+	</tr>
+	<tr>
+	<td><a href="memorygame.html">Memory Game</a></td>
+	</tr>
+	<tr>
+	<td><a href="memorytest.html">Memory Test</a></td>
+	</tr>
+	<tr>
+	<td><a href="reflextest.html">Reflex Test</a></td>
+	</tr>
+	<tr>
+	<td><a href="spatialintelligence.html">Spatial Intelligence</a></td>
+	</tr>
+	<tr>
+	<td><a href="freesudoku.html">Free Sudoku</a></td>
+	</tr>
+	<tr>
+	<td><a href="towerofhanoi.html">Tower of Hanoi</a></td>
+	</tr>
+	<tr>
+	<td><a href="contactus.html">Contact us</a></td>
+	</tr>
+</table>
+<div class="intro">
+<h1>Tower of Hanoi</h1>
+<p>Now you can try some brain strechting and training by playing the Tower of Hanoi or Towers of Hanoi, which is a mathematical game/ puzzle. It consists of three pegs, and a number of discs of different sizes which can slide onto any peg. The puzzle starts with the discs neatly stacked in order of size on one peg, smallest at the top, thus making a conical shape. The object of the game is to move the entire stack to another peg, obeying the following <b>rules:</b><br> 
+– Only one disc may be moved at a time. <br>
+– No disc may be placed on top of a smaller disc.</p><br>
+<p>Most toy versions of the puzzle have 8 discs. The game seems impossible to many beginners, yet is solvable with a simple algorithm:</p>
+<h2>Recursive algorithm</h2>
+<p>1 - Label the pegs A, B, — these labels may move at different steps<br>
+2 - Let n be the total number of discs<br>
+3 - Number the discs from 1 (smallest) to n (largest)<br>
+4 - To move n discs from peg A to peg B:<br>
+5 - Move n?1 discs from A to C. This leaves disc #n alone on peg A<br>
+6 - Move disc #n from A to B<br>
+7 - Move n?1 discs from C to B so they sit on disc #n<br>
+</p>
+<p>The above is a recursive algorithm: to carry out steps 1 and 3, apply the same algorithm again for n?1. The entire procedure is a finite number of steps, since at some point the algorithm will be required for n = 1. This step, moving a single disc from peg A to peg B, is trivial.</p>
+<p>The Tower of Hanoi is a problem often used brain stretching games, also for beginning programming, in particular as an example of a simple recursive algorithm. It is also an example of an exponential time algorithm — for all but the smallest number of discs, it will take an impractically huge amount of time, even on the fastest computers in the world. There is no way to improve on this, because the minimum number of moves required to solve the puzzle is exponential in the number of discs. A very nice game ideal for brain training.</p>
+<p>Using recurrence relations, we can compute the exact number of moves that this solution
+requires, which is 2n ? 1, where n is the number of discs. This result is obtained by noting that steps 1 and 3 take Tn ? 1 time and step 2 takes constant time, giving Tn = 2Tn ? 1 + 1.</p>
+<span class="box1">Optimal number of moves:<span id="box2"> 25</span></span>
+<span class="box1">Number of your moves:<span id="box3"> 25</span></span>
+<div id="container">
+<span id="towerofhanoi_board1" onclick="ev(this)">
+<img  id="stick1" src="stick.png" onclick="ev(this)">
+</span>
+<span id="towerofhanoi_board2" onclick="ev(this)">
+<img id="stick2" src="stick.png" onclick="ev(this)">
+<div id="pile">
+<script>
+new_figure();
+</script>
+</div>
+</span>
+<span id="towerofhanoi_board3" onclick="ev(this)">
+<img  id="stick3" src="stick.png" onclick="ev(this)">
+</span>
+</div>
+Chose the number of disks !
+<select id="nb" onchange="check_disks()">
+<option value="3" selected >3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value='6'>6</option>
+<option value="7">7</option>
+<option value="8">8</option> 
+</select>
+<button name="bt" value="restart" onclick="rst()">r</button>
+<script>
+var optimal_moves=7;
+var moves=0;
+var nb_disks_i=3;
+var timer;
+var nb_disks=3;
+var disk_piles=[];
+var pile_length=[];
+var disk_positionx=[0,0,0,0,0,0,0,0,0];//change
+var disk_positiony=[0,0,0,0,0,0,0,0,0];//change
+var pile1=[];
+var pile2=[];
+var last_disk=[];
+var pile3=[];
+var chosen_disk="none";
+var src_pile="2";
+var dest_pile="none";
+var coeff;
+var sign;
+var height_sign;
+var height_diff;
+var blinking_disk="none";
+var blink_flag=0;
+var stop_flag=1;
+check_disks();
+pile_length["1"]=0;//index is pile1 and element is number of disks
+pile_length["2"]=3;//pile2
+pile_length["3"]=0;//pile3
+last_disk["2"]="disk1";
+document.getElementById("box3").innerHTML=moves;
+function rst(){
+moves=0;
+document.getElementById("box3").innerHTML=moves;
+check_disks();
+}
+function blink(){
+document.getElementById(blinking_disk).style.borderColor="#00FF00";
+timer=setTimeout(unblink,300);
+}
+function unblink(){
+document.getElementById(blinking_disk).style.borderColor="transparent";
+timer=setTimeout(blink,300);
+}
+function new_figure(){
+moves=0;
+document.getElementById("box3").innerHTML=moves;
+disk_piles=[];
+disk_positionx=[0,0,0,0,0,0,0,0,0];
+disk_positiony=[0,0,0,0,0,0,0,0,0];
+pile1=[];
+pile2=[];
+pile_length["1"]=0;
+pile_length["3"]=0;
+last_disk=[];
+pile3=[];
+chosen_disk="none";
+src_pile="2";
+dest_pile="none";
+last_disk["2"]="disk1";
+nb_disks++;
+
+	var output = '';
+	for(var i = 1; i < nb_disks; i++){
+		output += '<div id="disk'+i+'" onclick="save_value(this)"></div>';
+		var disk_name="disk"+i;
+		pile2[i-1]=disk_name;
+		disk_piles[disk_name[4]]="2";
+	}
+	var pl=document.getElementById('pile');
+	document.getElementById('pile').innerHTML=output;
+	nb_disks--;
+	if(nb_disks==3){
+	pl.style.bottom=0+"px";
+	}
+	else if(nb_disks==4){
+	pl.style.bottom=220+"px";
+	}
+	else if(nb_disks==5){
+	pl.style.bottom=500+"px";
+	}
+	else if(nb_disks==6){
+	pl.style.bottom=820+"px";
+	}
+	else if(nb_disks==7){
+	pl.style.bottom=1200+"px";
+	}
+	else if(nb_disks==8){
+	pl.style.bottom=1620+"px";
+	}
+	//change
+}	
+function check_disks(){
+blinking_disk="none";
+clearTimeout(timer);
+nb_disks_i=nb_disks;
+var slc=document.getElementById("nb");
+nb_disks=slc[slc.selectedIndex].value;
+optimal_moves=Math.pow(2,nb_disks)-1;
+document.getElementById("box2").innerHTML=optimal_moves;
+pile_length["2"]=nb_disks;
+new_figure();
+}
+function save_value(disk){
+event.stopPropagation();
+clearTimeout(timer);
+if(blinking_disk.localeCompare("none")!=0){
+document.getElementById(blinking_disk).style.borderColor="transparent";
+}
+chosen_disk=disk.id;
+blinking_disk=chosen_disk;
+timer=setTimeout(blink,300);
+}
+function ev(pile){
+clearTimeout(timer);
+document.getElementById(chosen_disk).style.borderColor="transparent";
+blinking_disk="none";
+src_pile=disk_piles[chosen_disk[4]];
+event.stopPropagation();
+dest_pile=pile.id;
+dest_pile=dest_pile[dest_pile.length-1];
+height_diff=pile_length[dest_pile]-pile_length[src_pile]+1;
+var other_disk=last_disk[dest_pile];
+if(chosen_disk.localeCompare("none")!=0&&!(pile_length[dest_pile]==0)&&chosen_disk[4]>other_disk[4]||chosen_disk.localeCompare("none")!=0&&chosen_disk.localeCompare(last_disk[src_pile])!=0){
+alert("Illegal Action !");
+chosen_disk="none";
+}
+if(1==0){
+alert("kdllk");
+}
+else{
+if(dest_pile.localeCompare(src_pile)!=0&&chosen_disk.localeCompare("none")!=0){
+ coeff=dest_pile[dest_pile.length-1]-src_pile[0];
+ if(coeff<0){
+ sign=-1;
+ }
+ else{
+ sign=1;
+ }
+  move();
+}
+}
+}
+function delete_disk(pile){
+pile.shift();
+last_disk[src_pile]=pile[0];	
+}
+function add_disk(pile,disk){
+pile.unshift(chosen_disk);
+last_disk[dest_pile]=chosen_disk;
+}
+function move() {
+moves++;
+document.getElementById("box3").innerHTML=moves;
+clearTimeout(timer);
+stop_flag=0;
+blink_flag=0;
+for(var i=0;i<nb_disks;i++){
+var dk="disk"+(i+1);
+document.getElementById(dk).setAttribute("onclick","");
+}
+
+document.getElementById("stick1").setAttribute("onclick","");
+document.getElementById("stick2").setAttribute("onclick","");
+document.getElementById("stick3").setAttribute("onclick","");
+document.getElementById("towerofhanoi_board1").setAttribute("onclick","");
+document.getElementById("towerofhanoi_board2").setAttribute("onclick","");
+document.getElementById("towerofhanoi_board3").setAttribute("onclick","");
+var posx;
+var posy;
+var ctrx=0;
+var ctry=0;
+  pile_length[src_pile]-=1;
+  pile_length[dest_pile]+=1;
+  if(src_pile=="1"){
+    delete_disk(pile1);
+  }
+  else if(src_pile=="2"){
+    delete_disk(pile2);
+  }
+  else if(src_pile=="3"){
+   delete_disk(pile3);
+  }
+  if(dest_pile=="1"){
+    add_disk(pile1,chosen_disk);
+  }
+  else if(dest_pile=="2"){
+    add_disk(pile2,chosen_disk);
+  }
+  else if(dest_pile=="3"){
+   add_disk(pile3,chosen_disk);
+  }
+  disk_piles[chosen_disk[4]]=dest_pile;
+  var elem = document.getElementById(chosen_disk);   
+  var flag=0;
+  var max_x=387;
+  posx=disk_positionx[chosen_disk[4]];
+  posy=disk_positiony[chosen_disk[4]];
+  if(height_diff>0){
+  height_sign=1;
+  }
+  else{
+  height_sign=-1;
+  }
+  var max_y=18;
+  var id = setInterval(frame,4);
+  function frame() {
+    if (ctrx ==Math.abs(max_x*coeff)) {
+	  flag=1;
+    } else {
+      posx=posx+sign;
+      ctrx++;	  
+      elem.style.right = posx + "px";	  
+    }
+	if(flag==1){
+	if (ctry ==Math.abs(height_diff*max_y)) {
+	clearInterval(id);
+	for(var i=0;i<nb_disks;i++){
+       var dk="disk"+(i+1);
+       document.getElementById(dk).setAttribute("onclick","save_value(this)");;
+    }
+	 document.getElementById("stick1").setAttribute("onclick","ev(this)");
+     document.getElementById("stick2").setAttribute("onclick","ev(this)");
+     document.getElementById("stick3").setAttribute("onclick","ev(this)");
+     document.getElementById("towerofhanoi_board1").setAttribute("onclick","ev(this)");
+     document.getElementById("towerofhanoi_board2").setAttribute("onclick","ev(this)");
+     document.getElementById("towerofhanoi_board3").setAttribute("onclick","ev(this)");
+	  if(pile1.length==nb_disks||pile3.length==nb_disks){
+      if(moves==optimal_moves){
+	   alert("Excellent!! You played optimally!");
+	  }
+	  else{
+	   alert("Good !!  Try playing optimally!");
+	  }
+}
+    } else {
+      posy=posy+height_sign;
+      ctry++;	  
+      elem.style.top = posy+ "px"; 
+    }
+	}
+  }
+  disk_positionx[chosen_disk[4]]+=max_x*coeff;
+    disk_positiony[chosen_disk[4]]+=max_y*height_diff;
+  chosen_disk="none";
+  
+}
+</script>
+</div>
+</body>
+</html>

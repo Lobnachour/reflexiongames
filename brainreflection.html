@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<title>Brain Training|Brain Exercices|Brain Fitness Games|Brain Metrix</title>
+<meta charset ="utf-8"/>
+ <link rel=stylesheet type="text/css" href="style.css" />
+</head>
+<body class="body">
+<p class="brainmetrix"><img src="brain.png">Brain Metrix<br><br></p>
+<table class="table1" border="black">
+<tr>
+<td><a href="template.html">Brain Exercices</a></td><td><a href="memorygame.html">Memory Game</a></td><td><a href="reflextest.html">Reflex test</a></td><td><a href="chessgame.html">Free Chess Game</a></td><td><a href="iqtest.html">IQ Test</a></td><td><a href="concentrationgame.html">Concentration Game</a></td><td><a href="iqscale.html">IQ Scale</a></td>
+</tr>
+</table>
+<div class="braintraining">
+<h1>Brain Training</h1>
+<p>Brain Metrix is an educational website dedicated to brain training programs; you can achieve optimum fitness by visiting your gym,
+ and engaging in a brain fitness program that is both fun and stimulating. Here you stretch and train your brain to the limit, you can train and test your memory
+ or test your reflexes or even your brain creativity and improve it and much more. Just check the menu on the left for a full list of our brain training games and 
+ activities which are all loads of fun.<br>You will find some brain fitness workouts that can help your mind process information more quickly, 
+ and more efficiently, as well as the ability to perform multiple tasks at the same time. You can get help to concentrate more and increase your brain reflection speed;
+ you will find simple but very effective brain training games and exercises like solving math problems to achieve greater mind fitness. You may be the smartest person in 
+ the world and you don't even know it. If you're not the most intelligent person in the world yet, then, welcome to your gym!<br>
+Included you will find some famous brainteasers, and puzzles that are fun and good for brain stretching exercise. Below is a 
+list of all our brain exercises described in more detail:</p></div>
+<table border="black" class="table2">
+   <tr>
+    <td>Brain Training Games</td>
+    </tr>
+	<tr>
+	<td> <a href="8_queens.html">8 Queens</a></td>
+	</tr>
+	<tr>
+	<td><a href="arrangegame.html">Arrange Game</a></td>
+	</tr>
+	<tr>
+	<td><a href="brainfitness.html">Brain Fitness</a></td>
+	</tr>
+	<tr>
+	<td><a href="brainreflection.html">Brain Reflection</a></td>
+	</tr>
+	<tr>
+	<td><a href="chessgame.html">Chess Game</a></td>
+	</tr>
+	<tr>
+	<td><a href="chessknight.html">Chess Knight</td>
+	</tr>
+	<tr>
+	<td><a href="cognitivetraining.html">Cognitive Training</a></td>
+	</tr>
+	<tr>
+	<td><a href="concentrationgame.html">Concentration Game</a></td>
+	</tr>
+	<tr>
+	<td><a href="iqdefinition.html">IQ Definition</a></td>
+	</tr>
+	<tr>
+	<td><a href="iqscale.html">IQ scale</a></td>
+	</tr>
+	<tr>
+	<td><a href="iqtest.html">IQ Test</a></td>
+	</tr>
+	<tr>
+	<td><a href="intelligencedefinition.html">Intelligence Definition</a></td>
+	</tr>
+	<tr>
+	<td><a href="memorygame.html">Memory Game</a></td>
+	</tr>
+	<tr>
+	<td><a href="memorytest.html">Memory Test</a></td>
+	</tr>
+	<tr>
+	<td><a href="reflextest.html">Reflex Test</a></td>
+	</tr>
+	<tr>
+	<td><a href="spatialintelligence.html">Spatial Intelligence</a></td>
+	</tr>
+	<tr>
+	<td><a href="freesudoku.html">Free Sudoku</a></td>
+	</tr>
+	<tr>
+	<td><a href="towerofhanoi.html">Tower of Hanoi</a></td>
+	</tr>
+	<tr>
+	<td><a href="contactus.html">Contact us</a></td>
+	</tr>
+</table>
+<div class="intro">
+<h1>Brain Reflection</h1>
+<p>This is a simple exercise to test the <b>reflection</b> of your <b>brain</b>, the faster the better, try to get a score of <b>0.20</b> in this <b>reflex test</b>. When you manage to reach that score then that means you're very fast, if you can't achieve that score then keep practicing. Practice makes perfect!</p>
+<p>Human reflection is the capacity of humans to exercise a willingness to learn more about our fundamental nature, purpose and essence. <b>Brain reflection</b> invariably leads to inquiry into the human condition and the essence of humankind as a whole. Humans often consider themselves to be the dominant species on Earth, and the most advanced in intelligence and ability to manage their environment, thanks to the mind reflection.</p>
+<h2>Instructions for the brain reflection exercise</h2>
+<p>Click on <b>"start"</b> to begin the exercise for the brain reflection, and get ready, when the color changes then click on the big square as fast as you can, try to click in 0.20 second, that you would mean that you have a super fast reflection. Good luck!</p>
+<h2>What is reflex?</h2>
+<p>It's a spontaneous, simple and unlearned response which results in a specific behavioral response to a specific stimulus. Although with humans learned behavior dominates, reflexes however persist as an important and vital component of human behavior.</p>
+<p>It's amazing how only one neuron is required to make the simplest known reflexes. However, most reflexes require activity in a large sequence of neurons. The neurons involved in most reflexes are connected by specific synapses to form functional units in the nervous system. Such a sequence begins with sensory neurons and ends with effector cells such as skeletal muscles, smooth muscles, and glands, which are controlled by motor neurons. The central neurons which are often interposed between the sensory and motor neurons are called interneurons. The sensory side of the reflex arc conveys specificity as to which reflex will be activated. The remainder of the reflex response is governed by the specific synaptic connections that lead to the effector neurons. A familiar reflex is the knee-jerk or stretch reflex. It involves the patellar (kneecap) tendon and a group of upper leg muscles.</p>
+<input type="button" value="start!" id="st" onclick="stay_white()">
+<script>
+var reflection_array=[''];
+var rnd;
+var click_time;
+var blink_time;
+var is_blinking=0;
+var click=0;
+var objectleft=0;
+function newBoard(){
+	var output = '';
+	for(var i = 0; i < reflection_array.length; i++){
+		output += '<div id="tile_'+i+'" onclick="display_score(this,\''+reflection_array[i]+'\','+i+')"></div>';
+	}
+	document.getElementById('reflection_board').innerHTML = output;
+}
+function shuffle_time(){
+var max_time=5000;
+rnd=Math.floor(Math.random()*max_time);
+}
+function stay_white(){
+document.getElementById("st").disabled=true;
+shuffle_time();
+tile_0.style.backgroundColor="#FFF";
+setTimeout(blink,rnd);
+}
+function blink(){
+blink_time=Date.now();
+tile_0.style.backgroundColor="#FF00FF";
+is_blinking=1;
+}
+function display_score(){
+if(is_blinking==0){
+alert("Cheater!Try again!");
+document.location.reload(true);
+}
+else{
+click_time=Date.now();
+click=1;
+alert("you clicked after "+(click_time-blink_time)+" ms");
+}
+if(click==1){
+document.location.reload(true);
+}
+}
+</script>
+<div id="reflection_board">
+<script>
+newBoard();
+</script>
+</div>
+</div>
+</div>
+</body>
+</html>
